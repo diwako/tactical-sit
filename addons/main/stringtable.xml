@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="DIWSIT">
+    <Package name="Main">
+        <Key ID="STR_DIWSIT_Main_chairs">
+            <Original>Chairs</Original>
+            <English>Chairs</English>
+            <Czech>Židle</Czech>
+            <French>Chaises</French>
+            <Spanish>Sillas</Spanish>
+            <Italian>Sedie</Italian>
+            <Polish>Krzesła</Polish>
+            <Portuguese>Cadeiras</Portuguese>
+            <Russian>Стулья</Russian>
+            <German>Stühle</German>
+            <Korean>의자</Korean>
+            <Japanese>椅子</Japanese>
+            <Chinese>椅子</Chinese>
+            <Chinesesimp>椅子</Chinesesimp>
+            <Turkish>Sandalyeler</Turkish>
+            <Ukrainian>Стільці</Ukrainian>
+        </Key>
+    </Package>
+</Project>

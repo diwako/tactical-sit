@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v6
+      - name: Check for BOM
+        uses: arma-actions/bom-check@master
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+      - name: Run HEMTT build
+        run: |
+          hemtt check -p -e
+          hemtt release
+      - name: Upload Release
+        uses: actions/upload-artifact@v6
+        with:
+          name: "@diwsit"
+          path: ".hemttout/release/*"

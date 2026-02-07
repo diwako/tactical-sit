@@ -1,0 +1,32 @@
+name = "Tactical Sit"
+author = "diwako"
+prefix = "diwsit"
+mainprefix = "z"
+
+[version]
+path = "addons/main/script_version.hpp"
+git_hash = 0
+
+[files]
+include = [
+    "meta.cpp",
+    "mod.cpp",
+    "LICENSE",
+    "icon.paa",
+    "icon.png",
+    "picture.paa",
+]
+exclude = ["*.psd", "*.png", "*.tga", "/**/cfg*.hpp", "*.ini"]
+
+[hemtt.launch.default]
+workshop = [
+    "450814997",  # CBA_A3's Workshop ID
+    "1779063631", # ZEN
+    "3499977893", # Advanced developer tools
+    "463939057", # ACE3
+]
+parameters = ["-world=empty", "-noPause", "-noPauseAudio", "-limitFPS=144"]
+mission = "test.vr"
+
+[lints.stringtables.sorted]
+options.only-lang = true

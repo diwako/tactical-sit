@@ -1,0 +1,14 @@
+name = "Tactical Sit {version}";
+picture = "picture.paa";
+actionName = "GitHub";
+action = "https://github.com/diwako/tactical-sit";
+logoSmall = "icon.paa";
+logo = "icon.paa";
+logoOver = "icon.paa";
+tooltip = "Tactical Sit";
+tooltipOwned = "Tactical Sit";
+description = "Tactical Sit";
+overview  = "Tactical Sit is a mod to grab a seat out of your inventory when ever you just stand around in a milsim mission and wait for orders anyways.";
+author = "diwako";
+hidePicture = 0;
+hideName = 0;
