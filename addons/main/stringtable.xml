@@ -19,5 +19,23 @@
             <Turkish>Sandalyeler</Turkish>
             <Ukrainian>Стільці</Ukrainian>
         </Key>
+        <Key ID="STR_DIWSIT_Main_inventory_full">
+            <Original>There is no space for this chair in your inventory...</Original>
+            <English>There is no space for this chair in your inventory...</English>
+            <Czech>V inventáři není místo pro tuto židli...</Czech>
+            <French>Il n'y a pas de place pour cette chaise dans votre inventaire...</French>
+            <Spanish>No hay espacio para esta silla en tu inventario...</Spanish>
+            <Italian>Non c'è spazio per questa sedia nel tuo inventario...</Italian>
+            <Polish>W Twoim ekwipunku nie ma miejsca na to krzesło...</Polish>
+            <Portuguese>Não há espaço para esta cadeira no seu inventário...</Portuguese>
+            <Russian>В вашем инвентаре нет места для этого стула...</Russian>
+            <German>Es gibt keinen Platz für diesen Stuhl in deinem Inventar...</German>
+            <Korean>인벤토리에 이 의자를 위한 공간이 없습니다...</Korean>
+            <Japanese>インベントリにこの椅子を置くスペースがありません...</Japanese>
+            <Chinese>您的库存中没有该椅子的空间...</Chinese>
+            <Chinesesimp>您的库存中没有该椅子的空间...</Chinesesimp>
+            <Turkish>Envanterinizde bu sandalye için yer yok...</Turkish>
+            <Ukrainian>У вашому інвентарі немає місця для цього стільця...</Ukrainian>
+        </Key>
     </Package>
 </Project>

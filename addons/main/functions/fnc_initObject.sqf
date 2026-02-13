@@ -2,7 +2,7 @@
 
 params ["_object"];
 
-if (isNull _object || !hasInterface) exitWith {};
+if (is3DEN || isNull _object || !hasInterface) exitWith {};
 
 if (getText (configOf _object >> QGVAR(itemClass)) isEqualTo "") exitWith {};
 

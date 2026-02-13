@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=33;
 	class ItemIDProvider
 	{
-		nextID=11;
+		nextID=14;
 	};
 	class Camera
 	{
@@ -43,13 +43,16 @@ addons[]=
 	"A3_Structures_F_EPC_Civ_Accessories",
 	"ace_sitting",
 	"A3_Structures_F_Civ_Camping",
-	"ace_dragging"
+	"ace_dragging",
+	"A3_Props_F_Orange_Humanitarian_Camps",
+	"A3_Structures_F_Furniture",
+	"A3_Props_F_Orange_Furniture"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=17;
+		items=18;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -168,11 +171,19 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
+		class Item17
+		{
+			className="A3_Props_F_Orange";
+			name="Arma 3 Orange - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
 {
-	"Contact"
+	"Contact",
+	"Orange"
 };
 randomSeed=7928845;
 class ScenarioData
@@ -202,7 +213,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=8;
+		items=11;
 		class Item0
 		{
 			dataType="Group";
@@ -320,10 +331,20 @@ class Mission
 								isBackpack=1;
 								class ItemCargo
 								{
-									items=1;
+									items=3;
 									class Item0
 									{
 										name="diwsit_main_Land_CampingChair_V1_F";
+										count=1;
+									};
+									class Item1
+									{
+										name="diwsit_main_Land_CampingChair_V2_F";
+										count=1;
+									};
+									class Item2
+									{
+										name="diwsit_main_Land_CampingChair_V2_white_F";
 										count=1;
 									};
 								};
@@ -575,12 +596,58 @@ class Mission
 				position[]={5649.5151,5.5064859,1171.7876};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=8;
 			type="Land_CampingChair_V2_F";
+			atlOffset=0.50148582;
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5650.5723,5.5064859,1171.7816};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=11;
+			type="Land_CampingChair_V2_white_F";
+			atlOffset=0.50148582;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5645.1211,5.4821024,1170.3009};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=12;
+			type="Land_ChairPlastic_F";
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5644.9531,5.4838014,1172.3256};
+				angles[]={-0,1.5707963,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=13;
+			type="Land_ArmChair_01_F";
 		};
 	};
 };
