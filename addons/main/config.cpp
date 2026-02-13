@@ -4,7 +4,11 @@ class CfgPatches {
         name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {
-            QGVAR(Land_CampingChair_V1_F)
+            QGVAR(Land_CampingChair_V1_F),
+            QGVAR(Land_CampingChair_V2_F),
+            QGVAR(Land_CampingChair_V2_white_F),
+            QGVAR(Land_ChairPlastic_F),
+            QGVAR(Land_ArmChair_01_F)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

@@ -6,9 +6,12 @@ if !(alive _object) exitWith {};
 private _itemClass = getText (configOf _object >> QGVAR(itemClass));
 if (_itemClass isEqualTo "") exitWith {};
 
-deleteVehicle _object;
+if !(_player canAdd _itemClass) exitWith {
+    [LLSTRING(inventory_full)] call ace_common_fnc_displayTextStructured;
+};
 
-[_player, _itemClass, true, true] call CBA_fnc_addItem;
+[_player, _itemClass, false, true] call CBA_fnc_addItem;
+deleteVehicle _object;
 
 if (isNull objectParent _player && {
     (stance _player) isEqualTo "STAND"

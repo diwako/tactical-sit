@@ -28,4 +28,24 @@ class Extended_Init_EventHandlers {
             init = QUOTE(call FUNC(initObject));
         };
     };
+    class Land_CampingChair_V2_F {
+        class ADDON {
+            init = QUOTE(call FUNC(initObject));
+        };
+    };
+    class Land_CampingChair_V2_white_F {
+        class ADDON {
+            init = QUOTE(call FUNC(initObject));
+        };
+    };
+    class Land_ChairPlastic_F {
+        class ADDON {
+            init = QUOTE(call FUNC(initObject));
+        };
+    };
+    class Land_ArmChair_01_F {
+        class ADDON {
+            init = QUOTE(call FUNC(initObject));
+        };
+    };
 };

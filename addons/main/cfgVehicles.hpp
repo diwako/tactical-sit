@@ -20,4 +20,18 @@ class cfgVehicles {
     class Land_CampingChair_V1_folded_F: Camping_base_F {
         GVAR(itemClass) = QGVAR(Land_CampingChair_V1_F);
     };
+    class Land_CampingChair_V2_F: ThingX {
+        GVAR(itemClass) = QGVAR(Land_CampingChair_V2_F);
+    };
+    class Land_CampingChair_V2_white_F: Land_CampingChair_V2_F {
+        GVAR(itemClass) = QGVAR(Land_CampingChair_V2_white_F);
+    };
+    class Furniture_base_F;
+    class Land_ChairPlastic_F: Furniture_base_F {
+        GVAR(itemClass) = QGVAR(Land_ChairPlastic_F);
+    };
+    class Furniture_Residental_base_F;
+    class Land_ArmChair_01_F: Furniture_Residental_base_F {
+        GVAR(itemClass) = QGVAR(Land_ArmChair_01_F);
+    };
 };
