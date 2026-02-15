@@ -22,7 +22,9 @@ private _mainAction = [
     QGVAR(mainAction), LLSTRING(chairs), QPATHTOF(ui\Land_CampingChair_V1_F_ca.paa), {
         true
     }, {
-        (GVAR(chairItems) arrayIntersect ([_player] call ace_common_fnc_uniqueItems)) isNotEqualTo []
+        isNull objectParent _player &&
+        {!(_player call ace_sitting_fnc_canStand)} &&
+        {(GVAR(chairItems) arrayIntersect ([_player] call ace_common_fnc_uniqueItems)) isNotEqualTo []}
     }
     ,_insertChildren
 ] call ace_interact_menu_fnc_createAction;
