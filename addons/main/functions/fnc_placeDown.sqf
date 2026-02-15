@@ -34,15 +34,17 @@ _itemPreviewObject attachTo [_player, [0, 1.5 * _itemPreviewObjectRadius, _offse
 
 // PFH that runs while the deployment is in progress
 ace_cargo_deployPFH = [{
-    (_this select 0) params ["_player", "_vehicle", "_item", "_itemPreviewObject"];
+    (_this select 0) params ["_player", "_item", "_itemPreviewObject"];
 
     if !(
-        !isNull _itemPreviewObject &&
-        {[_item, _vehicle, _player, false, true] call ace_cargo_fnc_canUnloadItem} // don't check for a suitable unloading position when deploying
+        alive _itemPreviewObject &&
+        {isNull objectParent _player} &&
+        {([_player] call ace_common_fnc_isAwake)} &&
+        {_item in ([_player] call ace_common_fnc_uniqueItems)}
     ) exitWith {
         _player call ace_cargo_fnc_deployCancel;
     };
-}, 0.5, [_player, ace_cargo_interactionVehicle, _classname, _itemPreviewObject]] call CBA_fnc_addPerFrameHandler;
+}, 0.5, [_player, _itemClass, _itemPreviewObject]] call CBA_fnc_addPerFrameHandler;
 
 // Add mouse button action and hint
 [localize "STR_ACE_Cargo_unloadObject", localize "STR_DISP_CANCEL", localize "STR_ACE_Cargo_scrollAction"] call ace_interaction_fnc_showMouseHint;
